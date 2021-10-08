@@ -1,13 +1,17 @@
 import React from "react";
-import { Typography } from "antd";
+import { Layout, Typography } from "antd";
+import SiderView from "layout/Sider";
 
 const { Title } = Typography;
 
 const CpoHqForumView = () => {
   return (
-    <div>
-      <Title level={1}>CPOHQ Forum</Title>
-    </div>
+    <Layout>
+      <SiderView />
+      <Layout style={{ padding: "0 24px 24px" }}>
+        <Title level={1}>CPOHQ Forum</Title>
+      </Layout>
+    </Layout>
   );
 };
 
